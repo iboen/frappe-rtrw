@@ -1,0 +1,219 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:full_name",
+ "creation": "2020-12-31 13:40:56.736107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "house",
+  "full_name",
+  "nick_name",
+  "citizen_id",
+  "phone_number",
+  "gender",
+  "photo",
+  "column_break_4",
+  "religion",
+  "marital_status",
+  "last_education",
+  "birth_place",
+  "birth_day",
+  "job",
+  "section_break_15",
+  "family",
+  "column_break_17",
+  "family_role",
+  "section_break_8",
+  "start_reside",
+  "column_break_21",
+  "is_moved",
+  "end_reside",
+  "section_break_23",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nick_name",
+   "fieldtype": "Data",
+   "label": "Nick Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "birth_day",
+   "fieldtype": "Date",
+   "label": "Birth Day"
+  },
+  {
+   "fieldname": "birth_place",
+   "fieldtype": "Data",
+   "label": "Birth Place"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Kartu Tanda Penduduk. Example: 327123456789",
+   "fieldname": "citizen_id",
+   "fieldtype": "Data",
+   "label": "Citizen ID"
+  },
+  {
+   "fieldname": "job",
+   "fieldtype": "Data",
+   "label": "Job"
+  },
+  {
+   "fieldname": "last_education",
+   "fieldtype": "Data",
+   "label": "Last Education"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "House",
+   "options": "House",
+   "reqd": 1
+  },
+  {
+   "fieldname": "family",
+   "fieldtype": "Link",
+   "label": "Family",
+   "options": "Family"
+  },
+  {
+   "fieldname": "family_role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Family Role",
+   "options": "\nFamily Head\nWife\nChild\nOther"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "\nIslam\nHindu\nBuddha\nKristen\nKatolik"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nMarried\nNever Married\nWidowed\nDivorced"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_reside",
+   "fieldtype": "Date",
+   "label": "Start Reside"
+  },
+  {
+   "depends_on": "eval:doc.is_moved==true",
+   "fieldname": "end_reside",
+   "fieldtype": "Date",
+   "label": "End Reside"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_moved",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Moved"
+  }
+ ],
+ "hide_toolbar": 1,
+ "image_field": "photo",
+ "modified": "2021-01-02 10:19:30.249233",
+ "modified_by": "Administrator",
+ "module": "RTRW",
+ "name": "House Member",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin RW",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Warga",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_preview_popup": 1,
+ "sort_field": "house",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

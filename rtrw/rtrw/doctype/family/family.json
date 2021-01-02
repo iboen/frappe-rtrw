@@ -1,0 +1,132 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{family_id} - {head_name}",
+ "creation": "2020-12-31 15:13:29.478756",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "family_id",
+  "address_type",
+  "section_break_2",
+  "house",
+  "column_break_3",
+  "head",
+  "section_break_6",
+  "address",
+  "column_break_8",
+  "head_name",
+  "section_break_11",
+  "residence_address",
+  "is_residence_owned",
+  "is_moved"
+ ],
+ "fields": [
+  {
+   "fieldname": "family_id",
+   "fieldtype": "Data",
+   "label": "Family ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "house.house_address",
+   "fetch_if_empty": 1,
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "House Address"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "head",
+   "fieldtype": "Link",
+   "label": "Head",
+   "options": "House Member"
+  },
+  {
+   "description": "Put these fields if the family is living in this RW",
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "label": "House",
+   "options": "House"
+  },
+  {
+   "fetch_from": "head.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "head_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Head Name"
+  },
+  {
+   "description": "Auto-generated from values above or you can put these fields manually",
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_type",
+   "fieldtype": "Select",
+   "label": "Address Type",
+   "options": "\nInternal\nExternal - DKB\nExternal - LKBJB\nExternal - LKBLJB"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "residence_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Residence Address",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_residence_owned",
+   "fieldtype": "Check",
+   "label": "Is Residence Owned"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_moved",
+   "fieldtype": "Check",
+   "label": "Is Moved"
+  }
+ ],
+ "modified": "2021-01-02 10:48:37.706600",
+ "modified_by": "Administrator",
+ "module": "RTRW",
+ "name": "Family",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

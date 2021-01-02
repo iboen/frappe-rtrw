@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2020-12-30 22:30:08.437961",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2020-12-31 14:40:19.704967",
+ "modified_by": "Administrator",
+ "module": "RTRW",
+ "name": "rt-rw",
+ "owner": "Administrator",
+ "page_name": "RT RW",
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "RT RW"
+}
