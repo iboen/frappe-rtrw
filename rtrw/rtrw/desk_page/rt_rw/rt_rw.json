@@ -1,0 +1,36 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "RT RW",
+   "links": "[\n    {\n        \"label\": \"RW\",\n        \"name\": \"RW\",\n        \"onboard\": 1,\n        \"type\": \"doctype\"\n    },\n    {\n        \"label\": \"RT\",\n        \"name\": \"RT\",\n        \"onboard\": 1,\n        \"type\": \"doctype\"\n    }\n]"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-01-04 12:18:32.961081",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "RT RW",
+ "modified": "2021-01-04 12:26:06.789497",
+ "modified_by": "Administrator",
+ "module": "RTRW",
+ "name": "RT RW",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "RW",
+   "link_to": "RW",
+   "type": "DocType"
+  }
+ ]
+}
